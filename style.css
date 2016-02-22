@@ -13,6 +13,15 @@ html {
 	padding: 0;
 	}
 
+header {
+	width: 100%;
+	height: 450px;
+	background: url(noam-garden.jpg) no-repeat;
+	background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+
 body { 
 	font-family: 'Merriweather', serif;font: georgia, sans-serif;
 	line-height: 1.8;
@@ -20,6 +29,7 @@ body {
 	margin: 0; 
 	padding: 0;
 	}
+
 p { 
 	margin-top: 0; 
 	text-align: left;
@@ -45,8 +55,9 @@ h3 {
 	padding-left: 70px;
 	padding-top: 200px;
 	color: white;
-	opacity: .7;
+	opacity: .8;
 	margin: 0;
+	width: 65%;
 }
 
 .intro header h2 {
@@ -56,13 +67,10 @@ h3 {
 	font-weight: 100;
 	color: white;
 	line-height: 0;
-	opacity: .7;
+	opacity: .9;
 	margin-top: 0;
 }
 
-.sidebar h3 {
-  font-size: 18px;
-}
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
@@ -86,20 +94,11 @@ abbr {
 	position: relative;
 	}
 
-header {
-	width: 100%;
-	height: 450px;
-	background: url(noam-garden.jpg) no-repeat;
-	background-size: cover;
-  background-position: 50%;
-  background-attachment: fixed;
-}
-
 .preamble, .main {
   width: 70%;
   float: left;
   padding: 30px 50px 0 70px;
-  background: #71B0DD;
+  background: #CCDCE8;
   box-sizing: border-box;
 }
 
@@ -109,61 +108,50 @@ header {
 	float: right;
   box-sizing: border-box;
   padding: 65px 20px;
+	margin-top: -450px;
+	height: 450px;
+	background: rgba(255, 255, 255, 0.7);	
 	}
 .summary p {
   color: #69620E;
-	text-align: center;
+	text-align: left;
   font-style: italic;
   padding: 10px;
 	}
-
 .summary a {
 	color: #000000;
   font-weight: bold;
-  background-color: #B49776;
-  padding: 8px;
-  margin: 10px 10px 5px 5px;
-  border-radius: 15px;
+  padding: 5px;
+	margin: none;
   width: 70px;
   text-align: center;
   transition: all .5s ease;
 }
-
 .summary a:hover {
   background-color: #E3B11D;
 }
 
-footer { 
-	text-align: center; 
-	}
-
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
-
 .sidebar {
   float: right;
-  margin: 70px;
+  margin: -310px 70px;
 	}
-
+.sidebar h3 {
+  font-size: 18px;
+	font-style: italic;
+}
 .sidebar .wrapper { 
 	font: 14px verdana, sans-serif;  
 	width: 230px; 
 	}
-
-.sidebar h3 {
-  font-style: italic;
-}
-
 .sidebar li {
   line-height: 25px;
 }
 
 footer {
+	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 100px;
 }
-
 footer a {
 	display: inline-block;
 	opacity: .5;
@@ -171,8 +159,18 @@ footer a {
 	transform: scale(.9);
 	transition: all .5s ease;
 } 
-
 footer a:hover {
 	opacity: 1;
 	transform: scale(1.1);
 }
+footer a:visited { 
+	text-decoration: none;
+	color: #3F2B08;
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+footer a:visited:hover { 
+	text-decoration: none;
+	color: #E3B11D;
+	}
