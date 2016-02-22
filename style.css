@@ -14,7 +14,7 @@ html {
 	}
 
 body { 
-	font: georgia, sans-serif;
+	font-family: 'Merriweather', serif;font: georgia, sans-serif;
 	line-height: 1.8;
 	color: #555753; 
 	margin: 0; 
@@ -27,20 +27,38 @@ p {
   line-height: 28px;  
 	}
 
-h1 {
-  margin: 0;
-  padding: 10px;
-  font-family: georgia;
-  font-style: bold;
+h1, h2, h3 {
+	font-family: 'Lato', sans-serif;
 }
 
+
 h3 { 
-	font: georgia, sans-serif;
   font-size: 32px;
   font-weight: bold;
 	margin-bottom: 12px; 
-	color: #69620E;
+	color: #3F2B08;
 	}
+
+.intro header h1 {
+	text-transform: uppercase;
+	font-size: 90px;
+	padding-left: 70px;
+	padding-top: 200px;
+	color: white;
+	opacity: .7;
+	margin: 0;
+}
+
+.intro header h2 {
+	font-size: 35px;
+	font-style: italic;
+	padding-left: 70px;
+	font-weight: 100;
+	color: white;
+	line-height: 0;
+	opacity: .7;
+	margin-top: 0;
+}
 
 .sidebar h3 {
   font-size: 18px;
@@ -48,16 +66,16 @@ h3 {
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #464B68;
+	color: #3F2B08;
 	}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #6E6F8B;
+	color: #E3B11D;
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #6E6F8B;
+	color: #E3B11D;
 	}
 abbr {
 	border-bottom: none;
@@ -68,16 +86,10 @@ abbr {
 	position: relative;
 	}
 
-h1, h2 {
-  color: #69620E;
-  text-align: center;
-  margin-top: 0;
-}
-
 header {
 	width: 100%;
 	height: 450px;
-	background: url(japanesegardensea.jpg) no-repeat;
+	background: url(noam-garden.jpg) no-repeat;
 	background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -87,7 +99,7 @@ header {
   width: 70%;
   float: left;
   padding: 30px 50px 0 70px;
-  background: #DDE2F6;
+  background: #71B0DD;
   box-sizing: border-box;
 }
 
@@ -106,10 +118,10 @@ header {
 	}
 
 .summary a {
-  color: #000000;
+	color: #000000;
   font-weight: bold;
-  background-color: #6E6F8B;
-  padding: 5px;
+  background-color: #B49776;
+  padding: 8px;
   margin: 10px 10px 5px 5px;
   border-radius: 15px;
   width: 70px;
@@ -118,7 +130,7 @@ header {
 }
 
 .summary a:hover {
-  background-color: #69620E;
+  background-color: #E3B11D;
 }
 
 footer { 
@@ -145,4 +157,22 @@ footer a:link, footer a:visited {
 
 .sidebar li {
   line-height: 25px;
+}
+
+footer {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+footer a {
+	display: inline-block;
+	opacity: .5;
+	margin: 10px;
+	transform: scale(.9);
+	transition: all .5s ease;
+} 
+
+footer a:hover {
+	opacity: 1;
+	transform: scale(1.1);
 }
