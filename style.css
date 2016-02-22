@@ -23,7 +23,7 @@ header {
 }
 
 body { 
-	font-family: 'Merriweather', serif;font: georgia, sans-serif;
+	font-family: 'Merriweather', serif;
 	line-height: 1.8;
 	color: #555753; 
 	margin: 0; 
@@ -55,19 +55,18 @@ h3 {
 	padding-left: 70px;
 	padding-top: 200px;
 	color: white;
-	opacity: .8;
 	margin: 0;
 	width: 65%;
 }
 
 .intro header h2 {
+	font-family: 'Merriweather', serif;
 	font-size: 35px;
 	font-style: italic;
 	padding-left: 70px;
 	font-weight: 100;
-	color: white;
+	color: #3F2B08;
 	line-height: 0;
-	opacity: .9;
 	margin-top: 0;
 }
 
@@ -107,7 +106,7 @@ abbr {
 	width: 30%;
 	float: right;
   box-sizing: border-box;
-  padding: 65px 20px;
+  padding: 235px 20px 0;
 	margin-top: -450px;
 	height: 450px;
 	background: rgba(255, 255, 255, 0.7);	
@@ -117,6 +116,7 @@ abbr {
 	text-align: left;
   font-style: italic;
   padding: 10px;
+	font-size: 15px;
 	}
 .summary a {
 	color: #000000;
